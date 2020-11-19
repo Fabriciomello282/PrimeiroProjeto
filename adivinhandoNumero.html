@@ -1,0 +1,40 @@
+# PrimeiroProjeto
+Meu Primeiro Projeto
+<meta charset="UTF-8">
+
+    <script>
+       function pulaLinha(){
+        
+        document.write("<br>");
+        document.write("<br>");
+       }
+
+       function mostra(frase){
+        
+        document.write(frase);
+        pulaLinha();
+       }
+       
+    var numeroEscolhido = Math.round(Math.random() * 10);
+    
+    var tentativas = 1;
+
+        while ( tentativas <= 3 ) {
+            var chute = parseInt(prompt("digite seu numero de chute: "));
+            
+            if ( chute == numeroEscolhido ){
+                
+            mostra ( "Parabéns, você acertou!" ) ;
+            break;
+
+           } else {
+
+            mostra( "você errou, tente novamente" ) ;
+
+           }
+           tentativas++;
+        }
+       
+
+
+    </script>
